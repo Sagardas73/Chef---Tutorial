@@ -1,0 +1,17 @@
+#vhost template file 
+
+<VirtualHost *:80>
+	ServerName 
+	DocumentRoot /content/sites/sdas2
+
+<Directory "/">
+	Options FollowSymLinks
+	AllowOverride None
+</Directory>
+<Directory /content/sites/sdas2>
+	Options Indexes FollowSymLinks MultiViews
+	AllowOverride None
+	Order allow,deny
+	allow from all
+</Directory>
+</VirtualHost> 
